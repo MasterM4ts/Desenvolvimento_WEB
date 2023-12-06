@@ -1,0 +1,40 @@
+body{
+    background-color:lightseagreen ;
+    margin: 90px;
+}
+
+img {
+    border-color: black;
+    border-radius: 5px;
+    border-width:  2px;
+    border-style:solid;
+    box-shadow: 5px 5px 10px black;
+    width: 300px;
+    height: 350px;
+}
+
+nav {
+    color: black;
+    text-align: center;
+    font-size:x-large;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: azure;
+    border-color: black;
+    border-width:  2px;
+    border-style:solid;
+    box-shadow: 0px 2px 10px black;
+}
+
+a {
+    color: black;
+    padding: 15px;
+}
+
+footer {
+    color: black;
+    font-family: cursive;
+}
