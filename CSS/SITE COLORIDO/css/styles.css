@@ -1,0 +1,46 @@
+div#cabecalho {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #25a732de;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+div#formulario {
+    color: white;
+    background-color: rgb(52, 138, 224);
+    padding: 10px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 85px;
+}
+
+div#rodape {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+body {
+    background-color: rgba(202, 202, 202, 0.548);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 140px;
+    padding: 20px;
+}
