@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            //length
+            var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            var tamanho = text.length;
+
+            console.log(tamanho);
+
+
+            //charAT
+            var text = "HELLO WORLD";
+
+            var char = text.charAt(0);
+
+            console.log(char);
+
+            //slice
+            var text = "Apple, Banana, Kiwi";
+
+            var part = text.slice(7,13);
+
+            console.log(part);
+
+
+            //UpperCase
+            var text = "Hello World";
+
+            var upper = text.toUpperCase();
+
+            console.log(upper);
+
+
+            //LowerCase
+            var text = "Hello world";
+
+            var lower = text.toLowerCase();
+
+            console.log(lower);
+
+            //function
+
+            function myFunction(p1, p2) {
+                return p1 * p2;
+            }
+
+            console.log(myFunction(10, 20));
+
+
+            //Condicional
+            var idade = window.prompt("Digite sua Idade: ");
+
+            if (idade <= 16){
+                window.alert("Adolecente");
+            }
+            else if (idade > 16 && idade < 40){
+                window.alert("Adulto");
+            }
+            else{
+                window.alert("Idoso");
+            }
+        </script>
+    </body>
+</html>

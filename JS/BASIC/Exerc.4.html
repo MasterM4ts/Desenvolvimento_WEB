@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            let nome = prompt("Digite o nome do aluno:");
+            let idade = parseInt(prompt("Digite a idade do aluno:"));
+            let sexo = prompt("Digite o sexo do aluno (M ou F):");
+            let nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            let nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+
+            var media = (nota1 + nota2) / 2;
+            var media = media.toFixed(2);
+            
+            window.alert("Média: "+ media);
+        </script>
+    </body>
+</html>
