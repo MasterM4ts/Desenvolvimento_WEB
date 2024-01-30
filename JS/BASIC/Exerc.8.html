@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            let nota_1 = parseFloat(prompt("Digite su 1º Nota:"));
+            let nota_2 = parseFloat(prompt("Digite su 2º Nota:"));
+
+            var media = (nota_1 + nota_2) / 2;
+
+            if (media >= 7.00){
+                window.alert("Aprovado! :)");
+                if (media == 10.00){
+                    window.alert("*/Aprovado com Distinção/* ;)");
+                }
+            }
+            else{
+                window.alert("Reprovado :(");
+            }
+        </script>
+    </body>
+</html>

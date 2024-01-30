@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var salario_Anterior = parseFloat(prompt("Digite seu Salário Atual: "));
+
+            if (salario_Anterior < 500){
+                let reajuste = salario_Anterior / 15/100; 
+                var salario_Atual =  salario_Anterior + reajuste;
+            }
+
+            else if (salario_Anterior >= 500 && salario_Anterior <= 1000){
+                let reajuste = salario_Anterior / 10/100; 
+                var salario_Atual =  salario_Anterior + reajuste;
+            }
+
+            else if (salario_Anterior > 1000){
+                let reajuste = salario_Anterior / 5/100; 
+                var salario_Atual = salario_Anterior + reajuste;
+            }
+
+            window.alert(`Reajuste do Salário:\nSalário sem Reajuste: R$${salario_Anterior}\nSalário com Reajuste: R$${salario_Atual}`)
+        </script>
+    </body>
+</html>

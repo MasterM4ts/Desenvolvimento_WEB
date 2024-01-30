@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var turno = prompt("Digite seu Turno: (M - Matutino/V - Vespertino/N - Noturno)");
+            var turno = turno.toUpperCase();
+
+            if (turno == "M"){
+                window.alert("Bom Dia!");
+            }
+
+            else if (turno == "V"){
+                window.alert("Boa Tarde!");
+            }
+
+            else if (turno == "N"){
+                window.alert("Boa Noite!");
+            }
+
+            else{
+                window.alert("Valor Invalido");
+            }
+        </script>
+    </body>
+</html>

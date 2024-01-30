@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var num_1 = parseFloat(prompt("Digite o 1º Número:"));
+            var num_2 = parseFloat(prompt("Digite o 2º Número:"));
+            var num_3 = parseFloat(prompt("Digite o 3º Número:"));
+
+            if (num_1 > num_2 && num_1 > num_3){
+                window.alert(`Maior Número: ${num_1}`);
+
+                if (num_2 < num_3){
+                    window.alert(`Menor Número: ${num_2}`)
+                }
+
+                else{
+                    window.alert(`Menor Número: ${num_3}`)
+                } 
+            }
+
+            else if (num_2 > num_1 && num_2 > num_3){
+                window.alert(`Maior Número: ${num_2}`);
+
+                if (num_3 < num_1){
+                    window.alert(`Menor Número: ${num_3}`)
+                }
+
+                else{
+                    window.alert(`Menor Número: ${num_1}`)
+                } 
+            }
+
+            else if (num_3 > num_1 && num_3 > num_2){
+                window.alert(`Maior Número: ${num_3}`);
+
+                if (num_1 < num_2){
+                    window.alert(`Menor Número: ${num_1}`)
+                }
+
+                else{
+                    window.alert(`Menor Número: ${num_2}`)
+                } 
+            }
+
+            else if (num_1 == num_2 && num_1 == num_3){
+                window.alert(`Números são Iguais: ${num_1}, ${num_2}, ${num_3}`);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var salario_Anterior = parseFloat(prompt("Digite seu Salário Atual: "));
+            
+
+            if (salario_Anterior < 280.00){
+                var porcentagem = "20%";
+                var reajuste = salario_Anterior / 20/100; 
+                var salario_Atual =  salario_Anterior + reajuste;
+            }
+
+            else if (salario_Anterior >= 280.00 && salario_Anterior < 700.00){
+                var porcentagem = "15%";
+                var reajuste = salario_Anterior / 15/100; 
+                var salario_Atual = salario_Anterior + reajuste;
+            }
+
+            else if (salario_Anterior >= 700.00 && salario_Anterior <= 1500.00){
+                var porcentagem = "10%";
+                var reajuste = salario_Anterior / 10/100; 
+                var salario_Atual =  salario_Anterior + reajuste;
+            }
+
+            else if (salario_Anterior > 1500.00){
+                var porcentagem = "5%";
+                var reajuste = salario_Anterior / 5/100; 
+                var salario_Atual = salario_Anterior + reajuste;
+            }
+
+            window.alert(`Reajuste do Salário:\nSalário sem Reajuste: R$${salario_Anterior.toFixed(2)}\nPorcentual de Aumento Aplicado: ${porcentagem}%\nValor Do Aumento: ${reajuste.toFixed(2)}\nSalário com Reajuste: R$${salario_Atual.toFixed(2)}`)
+        </script>
+    </body>
+</html>
