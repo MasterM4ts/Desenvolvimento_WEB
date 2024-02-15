@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var numInicial = parseInt(prompt("Digite o Número Inicial:"));
+            var numFinal = parseInt(prompt("Digite o Número Final:"));
+
+            var cand_1 = 0;
+            var cand_2 = 0;
+            var cand_3 = 0;
+            var nulo = 0;
+
+            for (numInicial; numInicial < numFinal; numInicial++) {
+                var num = parseInt(prompt(`Digite o Número do Seu Candidato:\n1.Candidato - 1\n2.Candidato - 2\n3.Candidato - 3`));
+                
+                if (num == 1){
+                    cand_1 += 1;
+                }
+
+                else if (num == 2){
+                    cand_2 += 1;
+                }
+
+                else if (num == 3){
+                    cand_3 += 1;
+                }
+
+                else{
+                    nulo += 1; 
+                }
+            }
+
+            if (cand_1 > cand_2 && cand_1 > cand_3){
+                console.log(`Vencedor: Candidato 1 com ${cand_1} Votos.`);
+                console.log(`Candidato 1: ${cand_1}\nCandidato 2: ${cand_2}\nCandidato 3: ${cand_3}\nNulo: ${nulo}`);
+            }
+
+            else if (cand_2 > cand_1 && cand_2 > cand_3){
+                console.log(`Vencedor: Candidato 2 com ${cand_2} Votos.`);
+                console.log(`Candidato 1: ${cand_1}\nCandidato 2: ${cand_2}\nCandidato 3: ${cand_3}\nNulo: ${nulo}`);
+            }
+
+            else if (cand_3 > cand_1 && cand_3 > cand_2){
+                console.log(`Vencedor: Candidato 3 com ${cand_3} Votos.`);
+                console.log(`Candidato 1: ${cand_1}\nCandidato 2: ${cand_2}\nCandidato 3: ${cand_3}\nNulo: ${nulo}`);
+            }
+        </script>
+    </body>
+</html>
